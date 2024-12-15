@@ -1,0 +1,134 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover; 
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Main Containers */
+.container, .main-container {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.9); /* Soft white with slight transparency */
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Headings */
+h2 {
+    color: #4a148c; /* Deep purple */
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #444; /* Dark gray */
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #4a148c;
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Light background */
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #6a1b9a; /* Slightly darker on focus */
+    outline: none;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: #6a1b9a; /* Vibrant purple */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #4a148c; /* Darker purple */
+    transform: scale(1.02); /* Subtle hover effect */
+}
+
+/* Links */
+.toggle-link {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #6a1b9a;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.toggle-link:hover {
+    color: #4a148c;
+    text-decoration: underline;
+}
+
+/* Error Messages */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 0.25em;
+    text-align: left;
+}
+
+/* Popup Styling */
+.error-popup {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.error-popup-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+}
+
+.close-popup {
+    color: #aaa;
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-popup:hover {
+    color: #000;
+}
